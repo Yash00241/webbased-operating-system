@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>ObsidianOS</title>
+  </head>
+  <body>
+
+    <div
+    style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.125); color: #fff; justify-content: space-between; gap: 32px;">
+        <p
+          style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+          ☀️ ObsidianOS ☁️ 
+        </p>
+        <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px;">
+          🌎 Life is Boring Without Adventure ⛰️
+        </p>
+        <p id="timeElement"
+          style="margin-right: 16p ; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+            Fetching Data From https://time.is
+        </p>
+  </div>
+
+
+    <div style="border: solid; padding: 16px; width: fit-content; border-radius: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background:#fff;">
+    <img style="width: 128px; height: 128px; border-radius: 64px; object-fit: cover;"
+       src="me.png" />
+       <h1 style="margin: 4px;">Welcome to Obsidian++</h1>
+       <p style="margin: 0px;">
+        <dfn>ObsidianOS</dfn> is a feature-limited <abbr
+        title="Operating System">OS</abbr> to answer the <br />
+        unasnwerable
+           question of <code>"who is Yash?"</code>
+       </p>    
+    </div>   
+    
+<script>
+setInterval(function () {
+  document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
+}, 1000);
+</script>
+
+  </body>
+</html>
